@@ -5,7 +5,7 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - textComponent: {instanceID: 0}
-  - startingState: {fileID: 11400000, guid: 5682f4bb31eadf741a361850e740b3fb, type: 2}
+  - startingState: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

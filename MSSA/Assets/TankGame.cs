@@ -6,20 +6,40 @@ using UnityEngine.UI;
 public class TankGame : MonoBehaviour
 {
     [SerializeField] Text textComponent;// SerializeField creates an editable item for this variable in the Unity Inspector
-    [SerializeField] ScriptObjectList startingState;
+    [SerializeField] States startingState; // Creates a block in which to assign an object of States type
+    
 
-
-    ScriptObjectList currentState;
+    States stateControl; // Initializes a new States object called stateControl
 
     // Start is called before the first frame update
     void Start ()
     {
-        currentState = startingState;
-        textComponent.text = currentState.ShowMenu();
+        stateControl = startingState;
+        textComponent.text = stateControl.GetStateText();
     }
 
     // Update is called once per frame
     void Update ()
     {
+        ManageState();
+    }
+    private void ManageState()
+    {
+        var currentState = stateControl;
+        var nextStates = stateControl.SelectedMenu();
+        try
+        {
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                stateControl = nextStates[0];
+            }
+        }
+        catch (System.IndexOutOfRangeException)
+        {
+            stateControl = currentState;
+        }
+
+
+        textComponent.text = stateControl.GetStateText();
     }
 }
