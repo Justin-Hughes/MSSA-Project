@@ -1,0 +1,208 @@
+Nintendo, licensed game
+
+regular things code in code. things that vary go into data
+
+console based game
+space trading game
+
+play as a space trader tasked with traveling between planets to make 
+
+ability to travel between planets, 3 planets, earth, a proxima 1, +1 of your choice
+
+Calculate distances using lightspeed equation = Distance/time relation based on StarTrek TNG warp factor - provided
+
+Any goods or services that you wish
+
+universal currency 
+
+compelling story 
+good ending : story based
+bad ending conditions: when you are 60, or you have no money and no goods. assets value <= 0 
+
+starting conditions : at minimum an 18 y/o character w/ a ship or means of acquiring a ship
+
+per - planet goods value
+
+no requirements for travel at minimum
+
+
+2d grid system for planet locations using earth as base and pythag theorem to get distance to other planets
+
+minimum of 5 total items to be traded 
+
+stretch goals--------
+
+ship load limit w/ upgrades for limit, speed, fuel capacity.
+
+Character builder
+
+other means of acquiring goods 
+
+battle system 
+
+space piracy
+anti piracy defenses
+
+fuel
+
+space illness
+
+fluctuating economy 
+intel/scuttlebutt
+
+hijack ship, chased by original owner throughout 
+
+
+
+while () from birth date > 12
+{
+    age++;
+    monthsfrombirthdate = monthsfrombirthdate-12
+}
+
+instantiate an object based on cursor position 
+
+iskeyavailable 
+
+
+
+
+have two counters increase for every item sold, totalSales and (planet name)saleCounter; i.e. earthSaleCounter. use the totalSales to track total sales and
+the earthSaleCounter in a formula stating if(earthSaleCounter == 500(or some other number)){planetAffinity++;} that gives you a way to increase planetAffinity
+which can affect sell prices, information gathering, etc. maybe have the game clear conditions be that you have to repair relations with all available planets
+by trading with them so that they will stop chasing you and Phillip.
+
+
+game quick outline
+
+
+bool pirateAttack = false;
+if(traveling == true)
+{
+    int x == randNum(1-100);
+    if(x > 70)
+    {
+        pirateAttack = true;
+    }
+    if (pirateAttack == true)
+    {
+        game();
+    }
+    pirateAttack = false;
+}
+
+bool gameFinish = false;
+
+game
+{
+
+int enemyCreateCounter = 0;
+int enemyMoveCounter = 0
+int enemyNumberCounter = 0;
+int shotcounter = 0;
+
+do
+{
+
+
+
+    if(IsKeyAvailable.DownArrow){playerYCursor--;} etc.
+    if(i;i==2,i++)
+    {
+        enemy#XCursor--;
+        i = 0;
+    }
+    if(playerYCursor == enemy#YCursor && playerXCursor == enemyXCursor)
+    {
+        winGame=false;
+        gameFinish = true;
+    }
+
+
+    if(playerYCursor == Console.BufferRight)
+    {
+        winGame=true;
+        gameFinish=true;
+    }
+
+    if(winGame==true)
+    {
+        curretMoney += randomNum(15-1000)
+    }
+    else if(winGame==false)
+    {
+        curretMoney -= randomNum(15-1000)
+    }
+
+                                                                                                    // Help needed starts here
+    if(enemyCreateCounter == 0)
+    {
+        enemy{enemyNumberCounter}(randNum);
+        enemyNumberCounter++;
+        enemyCreateCounter = 10;
+    }
+    class enemy0 : enemy(yRand)
+    class enemy1 : enemy(yRand)
+    class enemy2 : enemy(yRand)
+    class enemy3 : enemy(yRand)
+    class enemy4 : enemy(yRand)
+    class enemy5 : enemy(yRand)
+    class enemy6 : enemy(yRand)
+    class enemy7 : enemy(yRand)
+    ...
+
+    if(enemyMoveCounter == 0)
+    {
+        forevery(object Enemy)
+        enemy#.enemyXCursor--
+        enemyMoveCounter = 2;
+    }
+
+    //similar loop for bullets fired^ except  
+    
+    if (shotcounter == 0)
+    {
+        if(iskeyavailable.spacebar == true)
+        {
+            int bullet#X = currentX = playerXCursor;
+            int bullet#Y = int currentY = playerYCursor;
+            setcursorposition(bullet#X,bullet#Y)
+            cw("--");
+            setcursorposition(currentX,currentY)
+            shotcounter = 5;
+        }
+    
+        class Enemy(int YCursor)
+        {
+            public int enemyXCursor = Console.BufferRight;
+            public int enemyYCursor = YCursor
+            void print
+            {   
+                currentX = CursorPosition x
+                currentY = CursorPosition y
+                setcursorposition = (enemyXCursor, enemyYCursor)
+                Console.Write('@')
+                setcursorposition = (currentX, currentY)
+
+            }
+
+        }
+        if(shotcounter > 0)
+        {
+            shotcounter--;
+        }
+        if(enemyCreateCounter > 0)
+        {
+            enemyCreateCounter--;
+        }
+        if(enemyMoveCounter > 0)
+        {
+            enemyMoveCounter--;
+        }
+        for every(object bullet)
+        {
+            bullet#XCursor++;
+        }
+
+    }
+}while(gameFinish == false;)
