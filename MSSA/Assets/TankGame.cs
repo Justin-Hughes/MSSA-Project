@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TankGame : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class TankGame : MonoBehaviour
     void Update ()
     {
         ManageState();
+
     }
     private void ManageState()
     {
