@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 [CreateAssetMenu (menuName = "ScriptObjectList")]
@@ -19,4 +20,7 @@ public class States : ScriptableObject
     {
         return nextState;
     }
+
+
+
 }
