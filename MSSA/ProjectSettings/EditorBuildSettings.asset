@@ -8,4 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Map Selection.unity
+    guid: abc694236ea73844d84363da4bd575e9
+  - enabled: 1
+    path: Assets/Scenes/GameScreen.unity
+    guid: 6869de3d8fe66274aa2bb0712267a808
+  - enabled: 1
+    path: Assets/Scenes/Tank Choice.unity
+    guid: 11442fe7eb75e16428f53facbf263590
+  - enabled: 1
+    path: Assets/Scenes/PauseMenu.unity
+    guid: 02be4ade142e4374fbaa40d353ac8bce
   m_configObjects: {}
