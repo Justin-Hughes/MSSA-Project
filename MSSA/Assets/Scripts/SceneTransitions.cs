@@ -5,13 +5,16 @@ using UnityEngine.SceneManagement;
 public class SceneTransitions : MonoBehaviour
 {
     public Animator transitionAnim;
-    public string sceneName;
-    void Update()
+    // scripts must be attached attached to a game object and that game
+    // object must be attached to a button in order for the UI to use it
+
+    // make sure transition panels have raycast object unchecked or else it
+    // will block UI elements from the mouse.
+    public void Coroutine(string x)
     {
-
+        StartCoroutine(Load(x));
     }
-
-    IEnumerator LoadScene() // Coroutine so that your transition animation plays through all the way
+    public IEnumerator Load(string sceneName) // Coroutine so that your transition animation plays through all the way
     {
         transitionAnim.SetTrigger("end");//Begins the selected transition
         yield return new WaitForSeconds(1.5f);// = Thread.Sleep() (in seconds)
