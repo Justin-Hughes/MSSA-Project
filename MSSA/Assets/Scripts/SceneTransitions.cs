@@ -20,4 +20,9 @@ public class SceneTransitions : MonoBehaviour
         yield return new WaitForSeconds(1.5f);// = Thread.Sleep() (in seconds)
         SceneManager.LoadScene(sceneName);// Changes the scene
     }
+
+    public void EndGame()
+    {
+        Application.Quit();
+    }
 }
