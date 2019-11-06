@@ -12,7 +12,7 @@ public class TerrainCreation : MonoBehaviour
     {
         for (int i = 0; i < LENGTH; i++)
         {
-            heightmap[i] = UnityEngine.Random.Range(1, LENGTH);
+            heightmap[i] = UnityEngine.Random.Range(1, 20);
 
             GameObject gameObject = GameObject.CreatePrimitive(PrimitiveType.Cube);
             heightGOs[i] = gameObject;
@@ -20,12 +20,12 @@ public class TerrainCreation : MonoBehaviour
             TransformGO(i);
         }
 
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < 2; i++)
         {
             Smooth();
         }
 
-        Camera.main.transform.position = new Vector3(LENGTH / 2, LENGTH / 2, -LENGTH);
+        //Camera.main.transform.position = new Vector3(LENGTH / 2, LENGTH / 2, -LENGTH);
     }
 
     void TransformGO(int i)

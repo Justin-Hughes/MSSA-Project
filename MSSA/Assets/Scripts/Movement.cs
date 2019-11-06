@@ -12,7 +12,7 @@ public class Movement : MonoBehaviour
 
     public float speed = 6.0f;
     public float jumpSpeed = 8.0f;
-    public float gravity = 0.0f;
+    public float gravity = 20f;
 
     private Vector3 moveDirection = Vector3.zero;
 
@@ -28,7 +28,7 @@ public class Movement : MonoBehaviour
             // We are grounded, so recalculate
             // move direction directly from axes
 
-            moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
+            moveDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
             moveDirection *= speed;
 
             if (Input.GetButton("Jump"))
